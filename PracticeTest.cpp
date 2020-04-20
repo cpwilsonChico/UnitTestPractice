@@ -57,4 +57,10 @@ TEST(PracticeTest, is_not_palindrome_numeric)
     bool actual = obj.isPalindrome("884788");
     ASSERT_FALSE(actual);
 }
+TEST(PracticeTest, is_not_palindrome_nonalphanumeric)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("12XA_$SA1#_l;");
+    ASSERT_FALSE(actual);
+}
 
